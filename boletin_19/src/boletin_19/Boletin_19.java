@@ -15,7 +15,23 @@ public class Boletin_19 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+       /**Buzon obx = new Buzon();
+       
+       obx.cargarArrayList();
+       
+       int x = obx.numeroDeCorreos();
+        System.out.println(x);
         
+        boolean y = obx.porLer();
+        System.out.println(x);
+        
+        String j = obx.AmosaPrimerNoLeido();
+        System.out.println(j);
+        
+        String k = obx.amosa(1);
+        System.out.println(k);
+        
+        obx.elimina(0);**/
     }
     
 }

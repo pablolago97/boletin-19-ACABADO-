@@ -14,8 +14,24 @@ import javax.swing.JOptionPane;
  */
 public class Buzon {
     boolean y = false;
+    int numElementos;
     
     ArrayList <Correo> msgs = new ArrayList();
+    
+     public int pedirElemento() {
+        return Integer.parseInt(JOptionPane.showInputDialog("Escribe el numero de correos"));
+    }
+
+    public void insertar() {
+        msgs.add(new Correo());
+    }
+
+    public void cargarArrayList() {
+        numElementos=pedirElemento();
+        for (int i = 0; i < numElementos; i++) {
+            insertar();
+        }
+    }
     
     public int numeroDeCorreos(){
        return msgs.size();
@@ -52,7 +68,9 @@ public class Buzon {
 
     
     public String amosa (int k){
-       if (msgs.get(k)==)
+       String amos = null;
+       msgs.get(k).toString();
+       return amos;
     }
     
     public void elimina (int k){
