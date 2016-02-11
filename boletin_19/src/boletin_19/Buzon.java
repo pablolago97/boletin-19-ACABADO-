@@ -12,7 +12,9 @@ import javax.swing.JOptionPane;
  *
  * @author plago-bergonpazos
  */
+
 public class Buzon {
+    
     boolean y = false;
     int numElementos;
     
@@ -22,16 +24,14 @@ public class Buzon {
         return Integer.parseInt(JOptionPane.showInputDialog("Escribe el numero de correos"));
     }
 
-    public void insertar() {
-        msgs.add(new Correo());
-    }
+    
 
-    public void cargarArrayList() {
+    /*public void cargarArrayList() {
         numElementos=pedirElemento();
         for (int i = 0; i < numElementos; i++) {
             insertar();
         }
-    }
+    }*/
     
     public int numeroDeCorreos(){
        return msgs.size();
@@ -60,6 +60,7 @@ public class Buzon {
         String amosa = "";
         for (i = 0; i<msgs.size(); i++){
             if (msgs.get(i).isX() == true){
+               msgs.get(i).setX(false);
                 return msgs.get(i).getCorreo();
             }
         } 
@@ -68,9 +69,9 @@ public class Buzon {
 
     
     public String amosa (int k){
-       String amos = null;
-       msgs.get(k).toString();
-       return amos;
+       msgs.get(k).setX(false);
+       return  msgs.get(k).getCorreo();
+      
     }
     
     public void elimina (int k){

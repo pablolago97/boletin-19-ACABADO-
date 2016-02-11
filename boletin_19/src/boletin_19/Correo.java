@@ -5,6 +5,8 @@
  */
 package boletin_19;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author plago-bergonpazos
@@ -12,14 +14,14 @@ package boletin_19;
 public class Correo {
 
     String correo;
-    boolean x = true;//Non lido
+    boolean x ;
+
+    
 
     public Correo() {
-    }
-
-    public Correo(String correo, boolean x) {
-        this.correo = correo;
-        this.x = x;
+       
+        this.correo = JOptionPane.showInputDialog("Introduce el correo");
+        this.x = true;//Non lido
     }
     
     
