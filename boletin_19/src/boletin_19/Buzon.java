@@ -69,8 +69,8 @@ public class Buzon {
 
     
     public String amosa (int k){
-       msgs.get(k).setX(false);
-       return  msgs.get(k).getCorreo();
+       msgs.get(k-1).setX(false);
+       return  msgs.get(k-1).getCorreo();
       
     }
     
